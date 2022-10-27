@@ -1,0 +1,238 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.body{
+    width: 100%;
+    color: rgb(85,75,85);
+    background-color: rgb(255,255,255);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* nav y footer para todas las paginas */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6B6D76;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 2px solid #EFEFF0;
+    background-color: #EFEFF0;
+}
+
+nav ul li:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.2s;
+    
+}
+
+nav ul li a:hover{
+    background-color: #FD96A9;
+    transition: all 0.2s;
+    color: black;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    list-style: none;
+    align-items: center;
+    margin-top: 15px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: (3, 1fr 2fr 1 fr);
+    grid-template-areas: 
+    ". lista .";
+    background-color: #6B6D76;
+}
+
+.footer{
+    grid-area: lista;
+    justify-content: space-between;
+}
+
+footer ul li i{
+    color: #EFEFF0;
+}
+
+/* index */
+
+h1 {
+    padding: 50px 0;
+    font-size: 45px;
+    text-align: center;
+    color: rgb(54, 56, 55);
+}
+
+.indexMain{
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-template-areas: 
+    ". titulo titulo ."
+    ". imagenes imagenes ."
+    ". imagenes imagenes .";
+}
+
+.h1{
+    grid-area: titulo;
+}
+
+.carousel1{
+    grid-area: imagenes;
+    justify-content: center;
+}
+
+.texto1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10%;
+    background-color: #49B6FF
+}
+
+.texto1:hover{
+    transform: scale(1.1,1.1);
+    transition: all 0.2s;
+    background-color: #FD96A9;
+}
+
+/* destinos */
+
+/* @media (min-width:320px)  {  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) }*/
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+.destinosMain{
+    display: grid;
+    grid-template-columns: (5, 1fr);
+    grid-template-rows: (3 1fr);
+    grid-template-areas: 
+    ". carrusel2 carrusel2 carrusel2 ."
+    ". carrusel2 carrusel2 carrusel2 ."
+    ".. textoDestinos ..";
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.h1_destinos{
+    grid-area: textoDestinos;
+    padding: 50px 0;
+    font-size: 45px;
+    color: rgb(54, 56, 55);
+    text-align: center;
+    justify-content: center;
+}
+
+.carousel2{
+    grid-area: carrusel2;
+    justify-content: center;
+}
+
+.seccion2 {
+    display:grid;
+    gap: 2rem; 
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    /* con esto hago que sea adaptable a cualquier dispositivo*/
+}
+
+
+.norte{
+    grid-area: norte;
+}
+
+.mesopotamia{
+    grid-area: mesopotamia;
+}
+
+.coordillera{
+    grid-area: coordillera;
+}
+
+.patagonia{
+    grid-area: patagonia;
+}
+
+div a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #6B6D76;
+    background-color: #FD96A9;
+}
+
+div a:hover{
+    transition: all 0.2s;
+    color: black;
+}
+
+div p{
+    margin: 10px;
+}
+
+.destinos{
+    border: 2px solid #6B6D76;
+    padding: 10px;
+}
+
+.destinos:hover{
+    transition: all 0.2s;
+    background-color: lavender;
+}
+
+/* Newsletter */
+
+.seccion3{
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    grid-template-rows: (3, 1fr);
+    grid-template-areas: 
+    "titNews"
+    "textNews"
+    "formNews";
+    margin: 5px auto;
+    width: 90%;
+}
+
+.tituloNewsletter{
+    grid-area: titNews;
+    justify-content: center;
+    text-align: center;
+}
+
+.textoNewsletter{
+    grid-area: textNews;
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    padding: 3px auto;
+    border: 1px solid #6B6D76;
+    background-color: #FD96A9;
+}
+
+.formNewsletter{
+    grid-area: formNews;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 15px;
+    border: 1px solid #6B6D76;
+    width: 70%;
+}
+
