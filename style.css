@@ -236,3 +236,21 @@ div p{
     width: 70%;
 }
 
+.botonOpcion{
+    background-color: #FD96A9;
+    border: 1px solid black;
+}
+
+.botonOpcion:hover{
+    background-color: #6B6D76;
+    transform: scale(1.5, 1.5);
+    transition: all 0.2s;
+    border: 1px solid black;
+}
+
+.botonForms{
+    background-color: #FD96A9;
+    border-radius: 10%;
+    padding: 10px;
+
+}
