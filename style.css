@@ -123,16 +123,17 @@ h1 {
     display: grid;
     grid-template-columns: (5, 1fr);
     grid-template-rows: (3 1fr);
+    grid-row-gap: 20px;
     grid-template-areas: 
     ". carrusel2 carrusel2 carrusel2 ."
     ". carrusel2 carrusel2 carrusel2 ."
-    ".. textoDestinos ..";
+    ".. textoDestino ..";
     justify-content: center;
     margin-top: 20px;
 }
 
-.h1_destinos{
-    grid-area: textoDestinos;
+.textoDestinos{
+    grid-area: textoDestino;
     padding: 50px 0;
     font-size: 45px;
     color: rgb(54, 56, 55);
@@ -150,6 +151,7 @@ h1 {
     gap: 2rem; 
     grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     /* con esto hago que sea adaptable a cualquier dispositivo*/
+    margin: 10px;
 }
 
 
